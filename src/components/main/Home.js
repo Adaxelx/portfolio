@@ -1,5 +1,12 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
+
+const showText = keyframes`
+  20% { opacity: 1}
+  50% { opacity: 1; }
+  70% {opacity: 0;}
+  100% { opacity: 0; }
+`
 
 const StyledCircle = styled.div`
     height: 100%;
@@ -23,6 +30,21 @@ const StyledSquare = styled.div`
     height: 60%;
     width: 60%;
     background-color: ${({theme}) => theme.gColor}
+`
+
+const StyledP = styled.p`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    background-color: ${({color}) => color==='w' ? '#003783' : 'white'};
+    animation: ${showText} 10s ${({delay}) => delay ? '5s' : ''} infinite;
 `
 
 const data = [
@@ -75,27 +97,27 @@ const data = [
         color: 'b'
     },
     {
-        content: 'D',
+        content: <><StyledP>D</StyledP><StyledP color='w' delay>W</StyledP></>,
         color: 'w'
     },
     {
-        content: 'E',
+        content:  <><StyledP color='w'>E</StyledP><StyledP delay>E</StyledP></>,
         color: 'b'
     },
     {
-        content: 'S',
+        content:  <><StyledP>S</StyledP><StyledP color='w' delay>B</StyledP></>,
         color: 'w'
     },
     {
-        content: 'I',
+        content:  <><StyledP>I</StyledP><StyledP color='w' delay>D</StyledP></>,
         color: 'w'
     },
     {
-        content: 'G',
+        content:  <><StyledP>G</StyledP><StyledP color='w' delay>E</StyledP></>,
         color: 'w'
     },
     {
-        content: 'N',
+        content:  <><StyledP>N</StyledP><StyledP color='w' delay>V</StyledP></>,
         color: 'w'
     },
     {
@@ -141,7 +163,7 @@ const StyledGridItem = styled.div`
 `
 
 const Home = () => {
-    const items = data.map(it => <StyledGridItem bg={it.color}>{it.content}</StyledGridItem>)
+    const items = data.map((it,i) => <StyledGridItem key={i} bg={it.color}>{it.content}</StyledGridItem>)
     return(
         <StyledHome>
             <StyledGrid>
