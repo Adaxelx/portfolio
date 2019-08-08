@@ -19,7 +19,7 @@ const StyledApp = styled.main`
   top: 0;
   left: 0;
   height: 100vh;
-  background-color: black;
+  background-color: ${({theme}) => theme.gColor}
 `
 
 const App = () => {

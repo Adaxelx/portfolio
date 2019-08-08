@@ -6,7 +6,7 @@ const StyledCircle = styled.div`
     width: 100%;
     border-radius: 50%;
     position: absolute;
-    background-color: black;
+    background-color: ${({theme}) => theme.gColor}
     ${({side}) => side==='l' ? 'left: 50%;' : 'right: 50%;'}
 `
 
@@ -22,7 +22,7 @@ const StyledLine = styled.div`
 const StyledSquare = styled.div`
     height: 60%;
     width: 60%;
-    background-color: black;
+    background-color: ${({theme}) => theme.gColor}
 `
 
 const data = [
@@ -137,7 +137,7 @@ const StyledGridItem = styled.div`
     justify-content: center;
     height: 100%;
     width: 100%;
-    ${({theme,bg}) => `font-size: ${theme.fontSize.l}; background-color: ${bg==='w' ? 'white' : theme.bColor}; border: 1px solid ${theme.gColor}; color: ${theme.gColor}`}
+    ${({theme,bg}) => `font-size: ${theme.fontSize.l}; background-color: ${bg==='w' ? 'white' : theme.bColor};  color: ${theme.gColor}`}
 `
 
 const Home = () => {

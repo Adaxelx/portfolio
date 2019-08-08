@@ -3,7 +3,7 @@ export const theme = {
     marginContent: '15px',
     marginBox: '30px',
     bColor: '#003783',
-    gColor: '#707070',
+    gColor: '#f8bf2c',
     fontColor: 'white',
     flexCon: 'display: flex; flex-direction: column; align-items: center;',
     padding: '15px 0',
