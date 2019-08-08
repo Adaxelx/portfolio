@@ -5,6 +5,10 @@ import { theme } from './theme/mainTheme';
 
 /* components */
 
+/* main */
+
+import Home from './components/main/Home'
+
 /* aside */ 
 
 import Lines from './components/aside/Lines'
@@ -15,7 +19,7 @@ const StyledApp = styled.main`
   top: 0;
   left: 0;
   height: 100vh;
-  overflow: hidden;
+  background-color: black;
 `
 
 const App = () => {
@@ -25,6 +29,7 @@ const App = () => {
         <GlobalStyle />
         <Lines side='l'/>
         <Lines side='r'/>
+        <Home/>
       </StyledApp>
     </ThemeProvider>
   )
