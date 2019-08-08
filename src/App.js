@@ -8,6 +8,7 @@ import { theme } from './theme/mainTheme';
 /* main */
 
 import Home from './components/main/Home'
+import About from './components/main/About'
 
 /* aside */ 
 
@@ -18,7 +19,6 @@ const StyledApp = styled.main`
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
   background-color: ${({theme}) => theme.gColor}
 `
 
@@ -30,6 +30,7 @@ const App = () => {
         <Lines side='l'/>
         <Lines side='r'/>
         <Home/>
+        <About/>
       </StyledApp>
     </ThemeProvider>
   )
