@@ -1,6 +1,8 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components'
 
+import GridItem from '../aside/GridItem'
+
 const showText = keyframes`
   20% { opacity: 1}
   50% { opacity: 1; }
@@ -43,94 +45,122 @@ const StyledP = styled.p`
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 0;
-    background-color: ${({color}) => color==='w' ? '#003783' : 'white'};
+    background-color: ${({color,theme}) => color==='w' ? theme.bColor : 'white'};
+    color: ${({color,theme}) => color!=='w' ? theme.bColor : theme.gColor};
     animation: ${showText} 10s ${({delay}) => delay ? '5s' : ''} infinite;
 `
 
 const data = [
     {
         content: 'M',
-        color: 'w'
+        color: 'w',
+        delay: '0.1',
     },
     {
         content: 'O',
-        color: 'b'
+        color: 'b',
+        delay: '0.2',
+        start: 'true',
     },
     {
         content: 'S',
-        color: 'w'
+        color: 'w',
+        delay: '0.3',
     },
     {
         content: 'T',
-        color: 'w'
+        color: 'w',
+        delay: '0.4',
     },
     {
         content: 'O',
-        color: 'w'
+        color: 'w',
+        delay: '0.5',
     },
     {
         content: 'W',
-        color: 'w'
+        color: 'w',
+        delay: '0.6',
     },
     {
         content: 'S',
-        color: 'w'
+        color: 'w',
+        delay: '0.7',
     },
     {
         content: 'K',
-        color: 'b'
+        color: 'b',
+        delay: '0.8',
     },
     {
         content: 'I',
-        color: 'w'
+        color: 'w',
+        delay: '0.9',
     },
     {
         content: <StyledCircle side='l'/>,
-        color: 'b'
+        color: 'b',
+        delay: '2',
+        side: 'left'
     },
     {
         content: <StyledSquare/>,
-        color: 'w'
+        color: 'w',
+        delay: '1',
     },
     {
         content: <StyledCircle side='r'/>,
-        color: 'b'
+        color: 'b',
+        delay: '2',
+        side: 'right'
     },
     {
         content: <><StyledP>W</StyledP><StyledP color='w' delay>D</StyledP></>,
-        color: 'w'
+        color: 'w',
+        delay: '1.1',
     },
     {
         content:  <><StyledP color='w'>E</StyledP><StyledP delay>E</StyledP></>,
-        color: 'b'
+        color: 'b',
+        delay: '1.2',
+        start: 'true',
     },
     {
         content:  <><StyledP>B</StyledP><StyledP color='w' delay>S</StyledP></>,
-        color: 'w'
+        color: 'w',
+        delay: '1.3',
     },
     {
         content:  <><StyledP>D</StyledP><StyledP color='w' delay>I</StyledP></>,
-        color: 'w'
+        color: 'w',
+        delay: '1.4',
     },
     {
         content:  <><StyledP>E</StyledP><StyledP color='w' delay>G</StyledP></>,
-        color: 'w'
+        color: 'w',
+        delay: '1.5',
     },
     {
         content:  <><StyledP>V</StyledP><StyledP color='w' delay>N</StyledP></>,
-        color: 'w'
+        color: 'w',
+        delay: '1.6',
     },
     {
         content: <StyledLine/>,
-        color: 'w'
+        color: 'w',
+        delay: '2',
+        side: 'left'
     },
     {
         content: <StyledLine orientation='v'/>,
-        color: 'b'
+        color: 'b',
+        delay: '1.7',
     },
     {
         content: <StyledLine/>,
-        color: 'w'
+        color: 'w',
+        delay: '2',
+        side: 'right'
     },
 ]
 
@@ -151,19 +181,8 @@ const StyledGrid = styled.div`
     gap: 10px;
 `
 
-const StyledGridItem = styled.div`
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    ${({theme,bg}) => `font-size: ${theme.fontSize.l}; background-color: ${bg==='w' ? 'white' : theme.bColor};  color: ${theme.gColor}`}
-`
-
 const Home = () => {
-    const items = data.map((it,i) => <StyledGridItem key={i} bg={it.color}>{it.content}</StyledGridItem>)
+    const items = data.map((it,i) => <GridItem key={i} side={it.side} delay={it.delay} color={it.color} content={it.content}/>)
     return(
         <StyledHome>
             <StyledGrid>
