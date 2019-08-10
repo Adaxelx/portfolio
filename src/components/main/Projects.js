@@ -15,32 +15,20 @@ const data = [
     {
         title: 'Windows',
         img: windows,
-        tech: [
-            {
-                title: 'Styled - components',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-        ]
+        transform: '-100%',
+        link: 'https://github.com/Adaxelx'
     },
     {
         title: 'Business website',
         img: router,
+        transform: '-200%',
+        link: 'https://github.com/Adaxelx'
     },
     {
         title: 'Hair salon',
         img: salon,
+        transform: '-300%',
+        link: 'https://github.com/Adaxelx'
     },
 ]
 
@@ -53,7 +41,7 @@ const StyledProjects = styled.section`
 `
 
 const Projects = () => {
-    const projects = data.map((dt,i) => <Project key={i} title={dt.title} color={dt.color} img={dt.img} tech={dt.tech}/>)
+    const projects = data.map((dt,i) => <Project key={i} link={dt.link} transform={dt.transform} title={dt.title} color={dt.color} img={dt.img} tech={dt.tech}/>)
     return(
         <StyledProjects>
             <Title content="Projects" direction="true"/>

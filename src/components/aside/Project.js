@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
+import { TimelineMax } from 'gsap/TweenMax';
 
-const StyledProject = styled.section`
+const StyledProject = styled.a`
     margin-top: ${({theme}) => theme.marginContent};
     position: relative;
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(${({transform}) => transform});
+    opacity: 0;
     background-color: ${({color,theme}) => color==='w' ? 'white' : theme.bColor}
 `
 
@@ -43,15 +46,60 @@ const StyledImage = styled.img`
     width: 100%;
 `
 
-const Project = ({title,color,img}) => {
-    return(
-        <StyledProject color={color}>
-            <StyledCon>
-                <StyledTitle color={color}>{title}</StyledTitle>
-                <StyledImage src={img}/>
-            </StyledCon>
-        </StyledProject>
-    )
+
+class Project extends React.Component{
+
+    state = {active: false}
+
+    ref = React.createRef()
+
+    animate = () => {
+        const {ref} = this
+        const {active} = this.state
+        const tl = new TimelineMax();
+        const it = ref.current;
+        if(!active){
+            tl.addLabel('show')
+                .to(it, .5, { y: '20px', opacity: 1 })
+                .addLabel('move')
+                .to(it, .2, { y: '0px'});
+        }
+        this.setState({
+            active: true
+        })
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll)
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+
+    handleScroll = () =>{
+        const scrollV = window.scrollY
+        const { ref,animate } = this
+        if (ref.current !== undefined && ref.current !== null) {
+          const off = ref.current.offsetTop
+          if (off < scrollV + window.innerHeight - ref.current.offsetHeight) {
+                animate();
+          }
+        }
+    }
+
+    render(){
+        const {ref} = this
+        const {title,color,img,transform,link} = this.props
+        return(
+            <StyledProject target="_blank" href={link} transform={transform} ref={ref} color={color}>
+                <StyledCon>
+                    <StyledTitle color={color}>{title}</StyledTitle>
+                    <StyledImage src={img}/>
+                </StyledCon>
+            </StyledProject>
+        )
+    }
 }
 
 export default Project;
