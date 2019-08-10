@@ -9,6 +9,7 @@ import { theme } from './theme/mainTheme';
 
 import Home from './components/main/Home'
 import About from './components/main/About'
+import Projects from './components/main/Projects'
 
 /* aside */ 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Lines side='r'/>
         <Home/>
         <About/>
+        <Projects/>
       </StyledApp>
     </ThemeProvider>
   )
