@@ -7,7 +7,7 @@ import img from '../../images/mostoski.png'
 
 const StyledAbout = styled.section`
     width: 100%;
-    margin-top: ${({theme}) => theme.marginBox}
+    padding: ${({theme}) => theme.marginBox} 0;
     display: flex;
     flex-direction: column;
     align-items: center;

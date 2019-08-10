@@ -97,7 +97,7 @@ const data = [
         color: 'b'
     },
     {
-        content: <><StyledP>D</StyledP><StyledP color='w' delay>W</StyledP></>,
+        content: <><StyledP>W</StyledP><StyledP color='w' delay>D</StyledP></>,
         color: 'w'
     },
     {
@@ -105,19 +105,19 @@ const data = [
         color: 'b'
     },
     {
-        content:  <><StyledP>S</StyledP><StyledP color='w' delay>B</StyledP></>,
+        content:  <><StyledP>B</StyledP><StyledP color='w' delay>S</StyledP></>,
         color: 'w'
     },
     {
-        content:  <><StyledP>I</StyledP><StyledP color='w' delay>D</StyledP></>,
+        content:  <><StyledP>D</StyledP><StyledP color='w' delay>I</StyledP></>,
         color: 'w'
     },
     {
-        content:  <><StyledP>G</StyledP><StyledP color='w' delay>E</StyledP></>,
+        content:  <><StyledP>E</StyledP><StyledP color='w' delay>G</StyledP></>,
         color: 'w'
     },
     {
-        content:  <><StyledP>N</StyledP><StyledP color='w' delay>V</StyledP></>,
+        content:  <><StyledP>V</StyledP><StyledP color='w' delay>N</StyledP></>,
         color: 'w'
     },
     {
