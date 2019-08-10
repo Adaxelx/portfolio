@@ -10,6 +10,7 @@ import { theme } from './theme/mainTheme';
 import Home from './components/main/Home'
 import About from './components/main/About'
 import Projects from './components/main/Projects'
+import Contact from './components/main/Contact'
 
 /* aside */ 
 
@@ -33,6 +34,7 @@ const App = () => {
         <Home/>
         <About/>
         <Projects/>
+        <Contact/>
       </StyledApp>
     </ThemeProvider>
   )
