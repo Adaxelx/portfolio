@@ -8,6 +8,7 @@ export const theme = {
     flexCon: 'display: flex; flex-direction: column; align-items: center;',
     padding: '15px 0',
     fontSize: {
+      xs: '1.2rem',
       s: '1.5rem',
       m: '1.75rem',
       l: '2rem',
