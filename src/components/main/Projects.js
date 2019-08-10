@@ -14,7 +14,6 @@ import reactImg from '../../images/skills/React.png'
 const data = [
     {
         title: 'Windows',
-        color: 'w',
         img: windows,
         tech: [
             {
@@ -36,51 +35,13 @@ const data = [
         ]
     },
     {
-        title: 'Hair salon',
-        color: 'b',
-        img: salon,
-        tech: [
-            {
-                title: 'Styled - components',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-        ]
+        title: 'Business website',
+        img: router,
     },
     {
-        title: 'Business website',
-        color: 'w',
-        img: router,
-        tech: [
-            {
-                title: 'Styled - components',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-            {
-                title: 'React',
-                img: reactImg
-            },
-        ]
-    }
+        title: 'Hair salon',
+        img: salon,
+    },
 ]
 
 const StyledProjects = styled.section`
