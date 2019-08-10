@@ -19,17 +19,17 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-size: 1.6rem;
   }
-  @media (orientation: portrait) and ${({ theme }) => theme.device.tablet}{
+  ${({ theme }) => theme.devicePort.tablet}{
     html {
       font-size: 90%;
     }
   } 
-  @media (orientation: landscape) and ${({ theme }) => theme.device.laptop}{
+  ${({ theme }) => theme.deviceLand.laptop}{
     html {
       font-size: 100%;
     }
   } 
-  @media (orientation: landscape) and ${({ theme }) => theme.device.laptopL}{
+  ${({ theme }) => theme.deviceLand.laptopL}{
     html {
         font-size: 110%;
     }

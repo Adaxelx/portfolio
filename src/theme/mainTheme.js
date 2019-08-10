@@ -15,12 +15,18 @@ export const theme = {
       xl: '3rem',
       xxl: '4rem',
     },
-    device: {
-      mobileS: '(min-width: 320px)',
-      mobileM: '(min-width: 640px)',
-      tablet: '(min-width: 768px)',
-      laptop: '(min-width: 1024px)',
-      laptopL: '(min-width: 1280px)',
-      desktop: '(min-width: 1600px)',
+    devicePort: {
+      mobileM: '@media (min-width: 640px) and (orientation: portrait)',
+      tablet: '@media(min-width: 768px) and (orientation: portrait)',
+      laptop: '@media (min-width: 1024px) and (orientation: portrait)',
+      laptopL: '@media (min-width: 1280px) and (orientation: portrait)',
+      desktop: '@media (min-width: 1600px) and (orientation: portrait)',
+    },
+    deviceLand: {
+      mobileM: '@media (min-width: 640px) and (orientation: landscape)',
+      tablet: '@media(min-width: 768px) and (orientation: landscape)',
+      laptop: '@media (min-width: 1024px) and (orientation: landscape)',
+      laptopL: '@media (min-width: 1280px) and (orientation: landscape)',
+      desktop: '@media (min-width: 1600px) and (orientation: landscape)',
     },
   };
