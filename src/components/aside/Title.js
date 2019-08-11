@@ -9,6 +9,7 @@ const StyledCon = styled.section`
     flex-direction: ${({dir}) => dir ? 'row-reverse' : 'row'}
     align-items: center;
     justify-content: center;
+    margin-bottom: ${({theme}) => theme.marginContent}
 `
 
 const StyledH1 = styled.h1`
@@ -18,6 +19,12 @@ const StyledH1 = styled.h1`
     opacity: 0;
     margin-right: 20px;
     transform: ${({dir}) => dir ? 'translateX(100%);' : 'translateX(-100%);'} 
+    ${({ theme }) => theme.devicePort.tablet}{
+        font-size: ${({theme}) => theme.fontSize.xxl}
+    } 
+    ${({ theme }) => theme.devicePort.laptop}{
+        font-size: ${({theme}) => theme.fontSize.xxxl}
+    } 
 `
 
 const StyledRectCon = styled.div`
@@ -28,6 +35,14 @@ const StyledRectCon = styled.div`
     position: relative;
     ${({dir}) => dir? 'clip-path: polygon(100% 0, 0% 100%, 0 0);' : 'clip-path: polygon(100% 0, 0% 100%, 100% 100%);'}
     background-color: ${({theme}) => theme.bColor}
+    ${({ theme }) => theme.devicePort.tablet}{
+        height: 6rem;
+        width: 6rem;
+    } 
+    ${({ theme }) => theme.devicePort.laptop}{
+        height: 7rem;
+        width: 7rem;
+    } 
 `
 
 class Title extends React.Component{

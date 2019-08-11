@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
 const Footer = () =>{
     return(
         <StyledFooter>
-            <Text fontS="5rem" content="Created and designed by Adrian Mostowski in 2019"/>
+            <Text fontS="3rem" content="Created and designed by Adrian Mostowski in 2019"/>
         </StyledFooter>
     )
 }

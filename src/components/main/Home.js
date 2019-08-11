@@ -173,12 +173,15 @@ const StyledHome = styled.section`
 `
 
 const StyledGrid = styled.div`
-    width: 90%;
+    width: 80%;
     min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(7,1fr);
     gap: 10px;
+    ${({ theme }) => theme.devicePort.tablet}{
+       width: 60%;
+    } 
 `
 
 const Home = () => {

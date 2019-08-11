@@ -14,8 +14,10 @@ export const theme = {
       l: '2rem',
       xl: '3rem',
       xxl: '4rem',
+      xxxl: '5rem',
     },
     devicePort: {
+      mobileS: '@media (min-width: 360px) and (orientation: portrait)',
       mobileM: '@media (min-width: 640px) and (orientation: portrait)',
       tablet: '@media(min-width: 768px) and (orientation: portrait)',
       laptop: '@media (min-width: 1024px) and (orientation: portrait)',

@@ -14,7 +14,7 @@ const StyledContact = styled.section`
 
 const StyledList = styled.ul`
     list-style-type: none;
-    font-size ${({theme}) => theme.fontSize.m};
+    font-size ${({theme}) => theme.fontSize.l};
     width: 90%;
     padding: 15px 0;
     margin-top: ${({theme}) => theme.marginContent}
@@ -40,7 +40,7 @@ const StyledA = styled.a`
 const Contact = () => {
     return(
         <StyledContact>
-            <Title content="Contact&media"/>
+            <Title content="Contact"/>
             <StyledList>
                 <StyledLi><span>Author:</span><span>Adrian Mostowski</span></StyledLi>
                 <StyledLi><span>E-mail</span>adaxelx@o2.pl</StyledLi>

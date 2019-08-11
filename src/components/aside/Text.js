@@ -9,6 +9,9 @@ const StyledText = styled.p`
     text-align: justify;
     transform: translateY(100%);
     opacity: 0;
+    ${({ theme }) => theme.devicePort.tablet}{
+        font-size: ${({theme,fontS}) => fontS ? fontS : theme.fontSize.l}
+    } 
 `
 
 class Text extends React.Component{

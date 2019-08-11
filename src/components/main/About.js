@@ -16,6 +16,9 @@ const StyledAbout = styled.section`
 
 const StyledImg = styled.img`
     width: 90%;
+    ${({ theme }) => theme.devicePort.tablet}{
+        width: 60%;
+    } 
 `
 const About = () => {
     return(
