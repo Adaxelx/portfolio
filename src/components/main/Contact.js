@@ -22,6 +22,9 @@ const StyledList = styled.ul`
 `
 
 const StyledSocials = styled.section`
+    display: flex;
+    flex-direction column;
+    align-items: flex-start;
     border-top: 2px solid ${({theme}) => theme.bColor};
     border-bottom: 2px solid ${({theme}) => theme.bColor};
     width: 90%;
@@ -34,7 +37,9 @@ const StyledLi = styled.li`
     width: 100%;
 `
 const StyledA = styled.a`
+    display: block;
     color: black;
+    ${({al}) => al ? 'align-self: flex-end' : ''}
 `
 
 const Contact = () => {
@@ -43,11 +48,11 @@ const Contact = () => {
             <Title content="Contact"/>
             <StyledList>
                 <StyledLi><span>Author:</span><span>Adrian Mostowski</span></StyledLi>
-                <StyledLi><span>E-mail</span>adaxelx@o2.pl</StyledLi>
+                <StyledLi><span>E-mail:</span>adaxelx@o2.pl</StyledLi>
             </StyledList>
             <StyledSocials>
                 <StyledA href="https://github.com"><Text content="Github" fontS="4rem"/></StyledA>
-                <StyledA href="https://github.com"><Text content="Facebook" fontS="4rem"/></StyledA>
+                <StyledA al='true' href="https://github.com"><Text content="Facebook" fontS="4rem"/></StyledA>
                 <StyledA href="https://github.com"><Text content="Instagram" fontS="4rem"/></StyledA>
             </StyledSocials>
         </StyledContact>

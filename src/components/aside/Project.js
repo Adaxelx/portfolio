@@ -5,13 +5,16 @@ import { TimelineMax } from 'gsap/TweenMax';
 const StyledProject = styled.a`
     margin-top: ${({theme}) => theme.marginContent};
     position: relative;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateY(${({transform}) => transform});
     opacity: 0;
     background-color: ${({color,theme}) => color==='w' ? 'white' : theme.bColor}
+    @media (orientation: landscape){
+       width: 48%;
+    } 
 `
 
 const StyledCon = styled.div`

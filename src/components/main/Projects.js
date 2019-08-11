@@ -39,12 +39,23 @@ const StyledProjects = styled.section`
     padding: ${({theme}) => theme.marginBox} 0;
 `
 
+const StyledCon = styled.section`
+    width: 90%;
+    @media (orientation: landscape){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+`
+
 const Projects = () => {
     const projects = data.map((dt,i) => <Project key={i} link={dt.link} transform={dt.transform} title={dt.title} color={dt.color} img={dt.img} tech={dt.tech}/>)
     return(
         <StyledProjects>
             <Title content="Projects" direction="true"/>
-            {projects}
+            <StyledCon>
+                {projects}
+            </StyledCon>
         </StyledProjects>
     )
 }

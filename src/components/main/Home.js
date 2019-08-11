@@ -170,6 +170,9 @@ const StyledHome = styled.section`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    @media (orientation: landscape){
+       height: 150vh; 
+    } 
 `
 
 const StyledGrid = styled.div`
@@ -181,6 +184,19 @@ const StyledGrid = styled.div`
     gap: 10px;
     ${({ theme }) => theme.devicePort.tablet}{
        width: 60%;
+    } 
+    @media (orientation: landscape){
+        min-height: 140vh;
+        width: 40%;
+    } 
+    ${({ theme }) => theme.deviceLand.tablet}{
+        width: 30%;
+    } 
+    ${({ theme }) => theme.deviceLand.laptop}{
+        width: 50%;
+    } 
+    ${({ theme }) => theme.deviceLand.laptopL}{
+        width: 40%;
     } 
 `
 

@@ -5,7 +5,7 @@ import { TimelineMax } from 'gsap/TweenMax';
 const StyledText = styled.p`
     margin-top: ${({theme}) => theme.marginContent}
     font-size: ${({theme,fontS}) => fontS ? fontS : theme.fontSize.m}
-    width: 90%;
+    width: 100%;
     text-align: justify;
     transform: translateY(100%);
     opacity: 0;

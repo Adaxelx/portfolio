@@ -10,10 +10,14 @@ const StyledFooter = styled.footer`
     justify-content: center;
 `
 
+const StyledCon = styled.section`
+    width: 90%;
+`
+
 const Footer = () =>{
     return(
         <StyledFooter>
-            <Text fontS="3rem" content="Created and designed by Adrian Mostowski in 2019"/>
+            <StyledCon><Text fontS="3rem" content="Created and designed by Adrian Mostowski in 2019"/></StyledCon>
         </StyledFooter>
     )
 }
