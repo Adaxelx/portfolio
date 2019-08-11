@@ -29,6 +29,12 @@ const data = [
         transform: '-300%',
         link: 'https://github.com/Adaxelx'
     },
+    {
+        title: 'Hair salon',
+        img: salon,
+        transform: '-400%',
+        link: 'https://github.com/Adaxelx'
+    },
 ]
 
 const StyledProjects = styled.section`

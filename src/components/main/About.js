@@ -23,6 +23,7 @@ const StyledCon = styled.section`
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: space-between;
         width: 90%;
     } 
 `
@@ -32,6 +33,9 @@ const StyledTxtCon = styled.section`
     @media (orientation: landscape){
         width: 50%;
     } 
+    ${({ theme }) => theme.deviceLand.laptopL}{
+        width: 68%;
+    } 
 `
 
 const StyledImg = styled.img`
@@ -40,7 +44,10 @@ const StyledImg = styled.img`
         width: 60%;
     } 
     @media (orientation: landscape){
-        width: 50%;
+        width: 48%;
+    } 
+    ${({ theme }) => theme.deviceLand.laptopL}{
+        width: 30%;
     } 
 `
 const About = () => {
