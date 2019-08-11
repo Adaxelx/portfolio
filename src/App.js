@@ -11,6 +11,7 @@ import Home from './components/main/Home'
 import About from './components/main/About'
 import Projects from './components/main/Projects'
 import Contact from './components/main/Contact'
+import Footer from './components/main/Footer'
 
 /* aside */ 
 
@@ -36,6 +37,7 @@ const App = () => {
         <About/>
         <Projects/>
         <Contact/>
+        <Footer/>
       </StyledApp>
     </ThemeProvider>
   )
