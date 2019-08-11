@@ -48,6 +48,7 @@ class Title extends React.Component{
 
 
         if(!active){
+            console.log('xd')
             if(!direction){
                 tl.addLabel('show')
                     .to(tt, .5, { x: '40px', opacity: 1 })

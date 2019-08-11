@@ -9,7 +9,6 @@ import Project from '../aside/Project';
 import windows from '../../images/projects/windows.png'
 import salon from '../../images/projects/salon.png'
 import router from '../../images/projects/react-router-2.png'
-import reactImg from '../../images/skills/React.png'
 
 const data = [
     {

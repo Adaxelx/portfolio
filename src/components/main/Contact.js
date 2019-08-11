@@ -2,41 +2,54 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Title from '../aside/Title'
+import Text from '../aside/Text'
 
 const StyledContact = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     padding: 20px 0;
 `
 
 const StyledList = styled.ul`
     list-style-type: none;
-    font-size ${({theme}) => theme.fontSize.m}
+    font-size ${({theme}) => theme.fontSize.m};
+    width: 90%;
+    padding: 15px 0;
+    margin-top: ${({theme}) => theme.marginContent}
+    border-top: 2px solid ${({theme}) => theme.bColor};
 `
-const StyledSocials = styled.div`
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    position: absolute;
-    top: 50%;
-    ${({side}) => side ? 'right: 0%' : "left: 0%"};
 
+const StyledSocials = styled.section`
+    border-top: 2px solid ${({theme}) => theme.bColor};
+    border-bottom: 2px solid ${({theme}) => theme.bColor};
+    width: 90%;
+    padding-bottom: 15px;
+`
+
+const StyledLi = styled.li`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+`
+const StyledA = styled.a`
+    color: black;
 `
 
 const Contact = () => {
     return(
         <StyledContact>
-            <Title content="Contact"/>
-            <StyledSocials />
-            <StyledSocials side="r"/>
+            <Title content="Contact&media"/>
             <StyledList>
-                <li>Adrian Mostowski</li>
-                <li>adaxelx@o2.pl</li>
+                <StyledLi><span>Author:</span><span>Adrian Mostowski</span></StyledLi>
+                <StyledLi><span>E-mail</span>adaxelx@o2.pl</StyledLi>
             </StyledList>
+            <StyledSocials>
+                <StyledA href="https://github.com"><Text content="Github" fontS="4rem"/></StyledA>
+                <StyledA href="https://github.com"><Text content="Facebook" fontS="4rem"/></StyledA>
+                <StyledA href="https://github.com"><Text content="Instagram" fontS="4rem"/></StyledA>
+            </StyledSocials>
         </StyledContact>
     )
 }

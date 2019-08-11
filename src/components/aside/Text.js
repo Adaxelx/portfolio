@@ -4,7 +4,7 @@ import { TimelineMax } from 'gsap/TweenMax';
 
 const StyledText = styled.p`
     margin-top: ${({theme}) => theme.marginContent}
-    font-size: ${({theme}) => theme.fontSize.m}
+    font-size: ${({theme,fontS}) => fontS ? fontS : theme.fontSize.m}
     width: 90%;
     text-align: justify;
     transform: translateY(100%);
@@ -54,9 +54,9 @@ class Text extends React.Component{
 
     render(){
         const {ref} = this
-        const {content} = this.props
+        const {content,fontS} = this.props
         return(
-            <StyledText ref={ref}>{content}</StyledText>
+            <StyledText fontS={fontS} ref={ref}>{content}</StyledText>
         )
     }
 }
