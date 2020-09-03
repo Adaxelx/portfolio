@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/Portfolio2/static/js/main.7511164f.chunk.js",
-    "main.js.map": "/Portfolio2/static/js/main.7511164f.chunk.js.map",
+    "main.js": "/Portfolio2/static/js/main.6cc3a23a.chunk.js",
+    "main.js.map": "/Portfolio2/static/js/main.6cc3a23a.chunk.js.map",
     "runtime~main.js": "/Portfolio2/static/js/runtime~main.32625e0a.js",
     "runtime~main.js.map": "/Portfolio2/static/js/runtime~main.32625e0a.js.map",
-    "static/js/2.3754bdfe.chunk.js": "/Portfolio2/static/js/2.3754bdfe.chunk.js",
-    "static/js/2.3754bdfe.chunk.js.map": "/Portfolio2/static/js/2.3754bdfe.chunk.js.map",
+    "static/js/2.77718028.chunk.js": "/Portfolio2/static/js/2.77718028.chunk.js",
+    "static/js/2.77718028.chunk.js.map": "/Portfolio2/static/js/2.77718028.chunk.js.map",
     "index.html": "/Portfolio2/index.html",
-    "precache-manifest.149f8eb4101cfb74b547fcfd2915be72.js": "/Portfolio2/precache-manifest.149f8eb4101cfb74b547fcfd2915be72.js",
+    "precache-manifest.6e1cc380af93e4f64e021a545d1b209e.js": "/Portfolio2/precache-manifest.6e1cc380af93e4f64e021a545d1b209e.js",
     "service-worker.js": "/Portfolio2/service-worker.js",
+    "static/media/haku.jpg": "/Portfolio2/static/media/haku.1975deb5.jpg",
     "static/media/mostoski.png": "/Portfolio2/static/media/mostoski.87f15cfa.png",
-    "static/media/react-router-2.png": "/Portfolio2/static/media/react-router-2.3b8b3dc7.png",
     "static/media/salon.png": "/Portfolio2/static/media/salon.8f34ff7d.png",
+    "static/media/usamo.jpg": "/Portfolio2/static/media/usamo.497c505d.jpg",
     "static/media/windows.png": "/Portfolio2/static/media/windows.2f377511.png"
   }
 }
