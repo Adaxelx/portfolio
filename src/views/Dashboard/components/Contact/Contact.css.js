@@ -35,7 +35,15 @@ const StyledLi = styled.li`
 const StyledLink = styled.a`
   display: block;
   color: black;
+  text-decoration: underline;
   ${({ flexEnd }) => (flexEnd ? "align-self: flex-end" : "")}
+  transition: 0.5s;
+  &:hover:nth-of-type(even) {
+    transform: translateX(-30px);
+  }
+  &:hover:nth-of-type(odd) {
+    transform: translateX(30px);
+  }
 `;
 
 export { StyledContact, StyledLi, StyledList, StyledSocials, StyledLink };

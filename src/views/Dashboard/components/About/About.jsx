@@ -11,7 +11,7 @@ const About = () => {
         <StyledImg src={img} />
         <StyledTxtCon>
           <Text>
-            I'm Adrian, I'm 20 and I'm passionate of webdevelopment and desing.
+            I'm Adrian, I'm 20 and I'm passionate of web development and desing.
             Doing this since '18, however I had tried earlier some other things
             like C++.
           </Text>
@@ -23,7 +23,7 @@ const About = () => {
           <Text>
             Actually I'm studying in Warsaw University of Technology on
             Informatic Profile. In most of my free time I'm creating new pages
-            and developing new skill in webdevelopment.
+            and developing new skill in web development.
           </Text>
         </StyledTxtCon>
       </StyledCon>
