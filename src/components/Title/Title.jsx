@@ -113,11 +113,11 @@ class Title extends React.Component {
 
   render() {
     const { ref, tit, tri } = this;
-    const { content, direction } = this.props;
+    const { children, direction } = this.props;
     return (
       <StyledCon ref={ref} dir={direction}>
         <StyledH1 dir={direction} ref={tit}>
-          {content}
+          {children}
         </StyledH1>
         <StyledRectCon ref={tri} dir={direction} />
       </StyledCon>

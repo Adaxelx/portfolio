@@ -15,7 +15,7 @@ const Projects = () => {
   ));
   return (
     <StyledProjects>
-      <Title content="Projects" direction />
+      <Title direction>Projects</Title>
       <StyledCon>{projects}</StyledCon>
     </StyledProjects>
   );

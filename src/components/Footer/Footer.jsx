@@ -6,10 +6,9 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledCon>
-        <Text
-          fontS="3rem"
-          content="Created and designed by Adrian Mostowski in 2019"
-        />
+        <Text fontS="3rem">
+          Created and designed by Adrian Mostowski in 2019
+        </Text>
       </StyledCon>
     </StyledFooter>
   );

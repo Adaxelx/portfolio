@@ -35,7 +35,7 @@ const StyledLi = styled.li`
 const StyledLink = styled.a`
   display: block;
   color: black;
-  ${({ al }) => (al ? "align-self: flex-end" : "")}
+  ${({ flexEnd }) => (flexEnd ? "align-self: flex-end" : "")}
 `;
 
 export { StyledContact, StyledLi, StyledList, StyledSocials, StyledLink };

@@ -56,10 +56,10 @@ class Text extends React.Component {
 
   render() {
     const { ref } = this;
-    const { content, fontS } = this.props;
+    const { children, fontS } = this.props;
     return (
       <StyledText fontS={fontS} ref={ref}>
-        {content}
+        {children}
       </StyledText>
     );
   }

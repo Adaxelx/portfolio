@@ -11,7 +11,7 @@ import {
 const Contact = () => {
   return (
     <StyledContact>
-      <Title content="Contact" />
+      <Title>Contact</Title>
       <StyledList>
         <StyledLi>
           <span>Author:</span>
@@ -23,13 +23,10 @@ const Contact = () => {
       </StyledList>
       <StyledSocials>
         <StyledLink href="https://github.com">
-          <Text content="Github" fontS="4rem" />
+          <Text fontS="4rem">Github</Text>
         </StyledLink>
-        <StyledLink al="true" href="https://github.com">
-          <Text content="Facebook" fontS="4rem" />
-        </StyledLink>
-        <StyledLink href="https://github.com">
-          <Text content="Instagram" fontS="4rem" />
+        <StyledLink flexEnd href="https://github.com">
+          <Text fontS="4rem">Linked In</Text>
         </StyledLink>
       </StyledSocials>
     </StyledContact>
