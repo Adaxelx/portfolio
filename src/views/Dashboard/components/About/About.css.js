@@ -6,6 +6,7 @@ const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 const StyledCon = styled.section`
@@ -18,12 +19,14 @@ const StyledCon = styled.section`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
   }
 `;
 
 const StyledTxtCon = styled.section`
   width: 90%;
+
   @media (orientation: landscape) {
     width: 50%;
   }

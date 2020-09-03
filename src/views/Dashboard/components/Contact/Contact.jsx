@@ -18,14 +18,23 @@ const Contact = () => {
           <span>Adrian Mostowski</span>
         </StyledLi>
         <StyledLi>
-          <span>E-mail:</span>adaxelx@o2.pl
+          <span>E-mail:</span>a.k.mostowski@gmail.com
         </StyledLi>
       </StyledList>
       <StyledSocials>
-        <StyledLink href="https://github.com">
+        <StyledLink
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Adaxelx"
+        >
           <Text fontS="4rem">Github</Text>
         </StyledLink>
-        <StyledLink flexEnd href="https://github.com">
+        <StyledLink
+          target="_blank"
+          rel="noopener noreferrer"
+          flexEnd
+          href="https://linkedin.com/in/adrian-mostowski-712b28192/"
+        >
           <Text fontS="4rem">Linked In</Text>
         </StyledLink>
       </StyledSocials>

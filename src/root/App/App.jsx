@@ -7,8 +7,16 @@ import { Dashboard } from "views";
 
 /* aside */
 
+const StyledWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.gColor};
+`;
+
 const StyledApp = styled.main`
   width: 100%;
+  max-width: 1500px;
   position: relative;
   top: 0;
   left: 0;
@@ -19,13 +27,15 @@ const StyledApp = styled.main`
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <StyledApp>
-        <GlobalStyle />
-        <Lines side="l" />
-        <Lines side="r" />
-        <Dashboard />
-        <Footer />
-      </StyledApp>
+      <StyledWrapper>
+        <StyledApp>
+          <GlobalStyle />
+          <Lines side="l" />
+          <Lines side="r" />
+          <Dashboard />
+          <Footer />
+        </StyledApp>
+      </StyledWrapper>
     </ThemeProvider>
   );
 };
