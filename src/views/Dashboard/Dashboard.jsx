@@ -1,5 +1,5 @@
 import React from "react";
-import { GridHome } from "./components";
+import { GridHome, About, Contact } from "./components";
 
 /* main */
 
@@ -13,6 +13,8 @@ const Dashboard = () => {
   return (
     <>
       <GridHome />
+      <About />
+      <Contact />
     </>
   );
 };

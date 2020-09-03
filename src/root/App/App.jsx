@@ -2,7 +2,7 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import GlobalStyle from "theme/GlobalStyle";
 import { theme } from "theme/mainTheme";
-import { Lines } from "components";
+import { Lines } from "../../components"; // czemu "components" nie działa :/
 import { Dashboard } from "views";
 
 /* aside */
@@ -21,9 +21,8 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <StyledApp>
         <GlobalStyle />
-
-        {/* <Lines side="l" />
-        <Lines side="r" /> */}
+        <Lines side="l" />
+        <Lines side="r" />
         <Dashboard />
       </StyledApp>
     </ThemeProvider>
