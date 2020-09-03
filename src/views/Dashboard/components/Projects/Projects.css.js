@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.section`
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +10,8 @@ const StyledProjects = styled.section`
 `;
 
 const StyledCon = styled.section`
-  width: 90%;
+  width: 100%;
+
   @media (orientation: landscape) {
     display: flex;
     flex-wrap: wrap;

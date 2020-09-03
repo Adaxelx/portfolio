@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Project } from "../../../../components";
+import { Title, Project, Text } from "../../../../components";
 import projectsData from "constants/projectsData";
 import { StyledCon, StyledProjects } from "./Projects.css";
 
@@ -17,6 +17,9 @@ const Projects = () => {
     <StyledProjects>
       <Title direction>Projects</Title>
       <StyledCon>{projects}</StyledCon>
+      <Text fontS="3rem">
+        And much more on: <a href="https://github.com/Adaxelx">github</a>
+      </Text>
     </StyledProjects>
   );
 };
