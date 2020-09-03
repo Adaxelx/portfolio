@@ -18,7 +18,7 @@ const Contact = () => {
           <span>Adrian Mostowski</span>
         </StyledLi>
         <StyledLi>
-          <span>E-mail:</span>adaxelx@o2.pl
+          <span>E-mail:</span>a.k.mostowski@gmail.com
         </StyledLi>
       </StyledList>
       <StyledSocials>
