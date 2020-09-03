@@ -3,29 +3,28 @@ import styled from "styled-components";
 import { TimelineMax } from "gsap/TweenMax";
 
 const StyledCon = styled.section`
-    width: 95%;
-    margin-left: 2.5%;
-    display: flex;
-    flex-direction: ${({ dir }) => (dir ? "row-reverse" : "row")}
-    align-items: center;
-    justify-content: center;
-    margin-bottom: ${({ theme }) => theme.marginContent}
+  width: 95%;
+  margin-left: 2.5%;
+  display: flex;
+  flex-direction: ${({ dir }) => (dir ? "row-reverse" : "row")};
+  align-items: center;
+  justify-content: center;
+  margin-bottom: ${({ theme }) => theme.marginContent};
 `;
 
 const StyledH1 = styled.h1`
-    font-size: ${({ theme }) => theme.fontSize.xl}
-    color: white;
-    text-transform: uppercase;
-    opacity: 0;
-    margin-right: 20px;
-    transform: ${({ dir }) =>
-      dir ? "translateX(100%);" : "translateX(-100%);"} 
-    ${({ theme }) => theme.devicePort.tablet}{
-        font-size: ${({ theme }) => theme.fontSize.xxl}
-    } 
-    ${({ theme }) => theme.devicePort.laptop}{
-        font-size: ${({ theme }) => theme.fontSize.xxxl}
-    } 
+  font-size: ${({ theme }) => theme.fontSize.xl};
+  color: white;
+  text-transform: uppercase;
+  opacity: 0;
+  margin-right: 20px;
+  transform: ${({ dir }) => (dir ? "translateX(100%);" : "translateX(-100%);")}
+    ${({ theme }) => theme.devicePort.tablet} {
+    font-size: ${({ theme }) => theme.fontSize.xxl};
+  }
+  ${({ theme }) => theme.devicePort.laptop} {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+  }
 `;
 
 const StyledRectCon = styled.div`
