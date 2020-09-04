@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/Portfolio2/static/js/main.6cc3a23a.chunk.js",
-    "main.js.map": "/Portfolio2/static/js/main.6cc3a23a.chunk.js.map",
-    "runtime~main.js": "/Portfolio2/static/js/runtime~main.32625e0a.js",
-    "runtime~main.js.map": "/Portfolio2/static/js/runtime~main.32625e0a.js.map",
-    "static/js/2.77718028.chunk.js": "/Portfolio2/static/js/2.77718028.chunk.js",
-    "static/js/2.77718028.chunk.js.map": "/Portfolio2/static/js/2.77718028.chunk.js.map",
-    "index.html": "/Portfolio2/index.html",
-    "precache-manifest.6e1cc380af93e4f64e021a545d1b209e.js": "/Portfolio2/precache-manifest.6e1cc380af93e4f64e021a545d1b209e.js",
-    "service-worker.js": "/Portfolio2/service-worker.js",
-    "static/media/haku.jpg": "/Portfolio2/static/media/haku.1975deb5.jpg",
-    "static/media/mostoski.png": "/Portfolio2/static/media/mostoski.87f15cfa.png",
-    "static/media/salon.png": "/Portfolio2/static/media/salon.8f34ff7d.png",
-    "static/media/usamo.jpg": "/Portfolio2/static/media/usamo.497c505d.jpg",
-    "static/media/windows.png": "/Portfolio2/static/media/windows.2f377511.png"
+    "main.js": "/portfolio/static/js/main.bddaf594.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bddaf594.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/js/2.cf6f491f.chunk.js": "/portfolio/static/js/2.cf6f491f.chunk.js",
+    "static/js/2.cf6f491f.chunk.js.map": "/portfolio/static/js/2.cf6f491f.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.7d7ac25f530511bf700d23291e7392b8.js": "/portfolio/precache-manifest.7d7ac25f530511bf700d23291e7392b8.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/media/haku.jpg": "/portfolio/static/media/haku.1975deb5.jpg",
+    "static/media/mostoski.png": "/portfolio/static/media/mostoski.87f15cfa.png",
+    "static/media/salon.png": "/portfolio/static/media/salon.8f34ff7d.png",
+    "static/media/usamo.jpg": "/portfolio/static/media/usamo.497c505d.jpg",
+    "static/media/windows.png": "/portfolio/static/media/windows.2f377511.png"
   }
 }
