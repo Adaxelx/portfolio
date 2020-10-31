@@ -4,16 +4,7 @@ import projectsData from "constants/projectsData";
 import { StyledCon, StyledProjects } from "./Projects.css";
 
 const Projects = () => {
-  const projects = projectsData.map(({ link, transform, title, img, live }) => (
-    <Project
-      key={title}
-      link={link}
-      transform={transform}
-      title={title}
-      img={img}
-      live={live}
-    />
-  ));
+  const projects = projectsData.map((props) => <Project {...props} />);
   return (
     <StyledProjects>
       <Title direction>Projects</Title>

@@ -6,7 +6,9 @@ import {
   StyledProject,
   StyledTitle,
   StyledButton,
+  StyledBlocked,
   StyledButtonContainer,
+  StyledMessage,
 } from "./Project.css";
 
 class Project extends React.Component {
@@ -51,7 +53,7 @@ class Project extends React.Component {
 
   render() {
     const { ref } = this;
-    const { title, color, img, transform, link, live } = this.props;
+    const { title, color, img, transform, link, live, blocked } = this.props;
     return (
       <StyledProject transform={transform} ref={ref} color={color}>
         <StyledCon>
@@ -59,13 +61,20 @@ class Project extends React.Component {
           <StyledImage src={img} />
         </StyledCon>
         <StyledButtonContainer>
-          <StyledButton target="_blank" rel="noopener noreferrer" href={live}>
-            Live
-          </StyledButton>
+          {blocked ? (
+            <StyledBlocked>Live</StyledBlocked>
+          ) : (
+            <StyledButton target="_blank" rel="noopener noreferrer" href={live}>
+              Live
+            </StyledButton>
+          )}
           <StyledButton target="_blank" rel="noopener noreferrer" href={link}>
             Github/code
           </StyledButton>
         </StyledButtonContainer>
+        {blocked && (
+          <StyledMessage>Web page is not actually hosted.</StyledMessage>
+        )}
       </StyledProject>
     );
   }

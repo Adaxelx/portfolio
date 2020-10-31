@@ -8,6 +8,7 @@ const data = [
     title: "Usamodzielnieni",
     img: usamo,
     transform: "-100%",
+    blocked: true,
     link: "https://github.com/Salabim-mb/Usamodzielnieni",
     live: "https://usamodzielnieni-frontend.herokuapp.com/",
   },

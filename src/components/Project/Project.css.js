@@ -1,4 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const LiveButton = css`
+  display: block;
+  margin-right: 5px;
+  padding: 10px;
+  color: black;
+  font-size: ${({ theme }) => theme.fontSize.xs};
+`;
 
 const StyledProject = styled.div`
   margin-top: ${({ theme }) => theme.marginContent};
@@ -53,16 +61,18 @@ const StyledImage = styled.img`
 `;
 
 const StyledButton = styled.a`
-  display: block;
   background-color: ${({ theme }) => theme.gColor};
-  margin-right: 5px;
-  padding: 10px;
-  color: black;
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  ${LiveButton}
+
   &:hover {
     background-color: #face5c;
     transition: 0.5s;
   }
+`;
+
+const StyledBlocked = styled.div`
+  background-color: gray;
+  ${LiveButton}
 `;
 
 const StyledButtonContainer = styled.div`
@@ -70,6 +80,12 @@ const StyledButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  flex-basis: 100%;
+`;
+
+const StyledMessage = styled.p`
+  margin-bottom: 10px;
+  color: white;
 `;
 export {
   StyledCon,
@@ -78,4 +94,6 @@ export {
   StyledTitle,
   StyledButton,
   StyledButtonContainer,
+  StyledBlocked,
+  StyledMessage,
 };

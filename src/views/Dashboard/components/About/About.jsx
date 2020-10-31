@@ -16,14 +16,14 @@ const About = () => {
             like C++.
           </Text>
           <Text>
-            As webdeveloper I'm trying to keep my code clean and readable for
+            As web developer I'm trying to keep my code clean and readable for
             every developer. For most of my projects I'm using React (It's my
             favourite tool).
           </Text>
           <Text>
-            Actually I'm studying in Warsaw University of Technology on
-            Informatic Profile. In most of my free time I'm creating new pages
-            and developing new skill in web development.
+            Actually I'm studying Applied Computer Science at Warsaw University
+            of Technology. In most of my free time I'm creating new pages and
+            developing new skill in web development.
           </Text>
         </StyledTxtCon>
       </StyledCon>
