@@ -1,7 +1,7 @@
 import React from "react";
 import { Title, Text } from "../../../../components";
 import { StyledAbout, StyledCon, StyledImg, StyledTxtCon } from "./About.css";
-import img from "assets/mostoski.png";
+import img from "assets/zdjęcie_cv.png";
 
 const About = () => {
   return (
@@ -12,18 +12,15 @@ const About = () => {
         <StyledTxtCon>
           <Text>
             I'm Adrian, I'm 20 and I'm passionate of web development and desing.
-            Doing this since '18, however I had tried earlier some other things
-            like C++.
           </Text>
           <Text>
             As web developer I'm trying to keep my code clean and readable for
-            every developer. For most of my projects I'm using React (It's my
-            favourite tool).
+            every developer. Mainly I work with React and hooks. Recently every
+            bigger project contains unit tests created with Jest and
+            @testing-library
           </Text>
           <Text>
-            Actually I'm studying Applied Computer Science at Warsaw University
-            of Technology. In most of my free time I'm creating new pages and
-            developing new skill in web development.
+            I study Applied Computer Science at Warsaw University of Technology.
           </Text>
         </StyledTxtCon>
       </StyledCon>

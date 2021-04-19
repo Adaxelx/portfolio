@@ -1,16 +1,16 @@
-import windows from "assets/projects/windows.png";
+import catan from "assets/projects/catanDesktop.png";
 import salon from "assets/projects/salon.png";
-import haku from "assets/projects/haku.jpg";
+
 import usamo from "assets/projects/usamo.jpg";
+import photoGallery from "assets/projects/photoGallery.png";
 
 const data = [
   {
     title: "Usamodzielnieni",
     img: usamo,
     transform: "-100%",
-    blocked: true,
     link: "https://github.com/Salabim-mb/Usamodzielnieni",
-    live: "https://usamodzielnieni-frontend.herokuapp.com/",
+    live: "https://usamodzielnieni.pl/",
   },
   {
     title: "Hair salon",
@@ -20,18 +20,18 @@ const data = [
     live: "http://pfbpatejuk.pl/",
   },
   {
-    title: "Business website",
-    img: haku,
+    title: "Photo Gallery",
+    img: photoGallery,
     transform: "-100%",
-    link: "https://github.com/Adaxelx/Business-page",
-    live: "https://adaxelx.github.io/Business-page/",
+    link: "https://github.com/Adaxelx/photo-gallery-page",
+    live: "https://adaxelx.github.io/photo-gallery-page/",
   },
   {
-    title: "Windows",
-    img: windows,
+    title: "Catan - dice stats",
+    img: catan,
     transform: "-100%",
     link: "https://github.com/Adaxelx/windows",
-    live: "https://adaxelx.github.io/windows/",
+    live: "https://github.com/Adaxelx/catan-dice-stats",
   },
 ];
 
