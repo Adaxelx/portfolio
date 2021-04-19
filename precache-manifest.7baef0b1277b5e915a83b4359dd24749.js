@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7fdd9b7733fd879b2601f490355028b",
+    "revision": "900350d5f371a810924bcb1030d74847",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,20 +8,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.8468b156.chunk.js"
   },
   {
-    "revision": "f85200f3f65df4d20c1d",
-    "url": "/portfolio/static/js/main.df18cecb.chunk.js"
+    "revision": "787b681d3201e5719118",
+    "url": "/portfolio/static/js/main.99ff231d.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "1975deb508207f57eb61d3f372579828",
-    "url": "/portfolio/static/media/haku.1975deb5.jpg"
+    "revision": "f8122eb1ed47b85acc4215f3bffb412b",
+    "url": "/portfolio/static/media/catanDesktop.f8122eb1.png"
   },
   {
-    "revision": "87f15cfa644615c61ce14ecae9888fcb",
-    "url": "/portfolio/static/media/mostoski.87f15cfa.png"
+    "revision": "02aefe576f6b12b4c6f8f7cbbd54d01d",
+    "url": "/portfolio/static/media/photoGallery.02aefe57.png"
   },
   {
     "revision": "8f34ff7d71a85cdc212599d72583bd96",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/usamo.497c505d.jpg"
   },
   {
-    "revision": "2f37751167dda952861983c6c86af543",
-    "url": "/portfolio/static/media/windows.2f377511.png"
+    "revision": "44317a8753e2f6b738060316756e7e47",
+    "url": "/portfolio/static/media/zdjęcie_cv.44317a87.png"
   }
 ]);
